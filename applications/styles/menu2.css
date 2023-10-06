@@ -1,0 +1,99 @@
+.list-container
+{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* min-height: 100vh; */
+    /* background: #f6f6f6; */
+    position: absolute;
+    top: 17vh;
+    left: 5vh;
+    width: 27vw;
+}
+.jdzBox
+{
+    width: 100%;
+    /* border-bottom: 20px solid #ff0000; */
+    /* border-bottom-left-radius: 10px; */
+    /* border-bottom-right-radius: 10px; */
+}
+.jdzBox h2
+{
+    coLor: #fff;
+    background: #03a9f4;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.jdzBox ul
+{
+    position: relative;
+    background: #fff;
+}
+.jdzBox ul li
+{
+    list-styLe: none;
+    padding: 1vh;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    transition: transform 0.5s;
+    font-size: 2vh;
+}
+.jdzBox ul:hover li /*เมื่อเลื่อนเมาส์ รายการ li ที่ไม่ได้เลือกจะแสดงเป็นสีจาง ๆ*/
+{
+   
+}
+.jdzBox ul li:hover
+{
+    transform: scale(1.05);
+    z-index: 100;
+    background: #3f51b5;
+    box-shadow: 0 5px 25px rgba(0,0,0,.2);
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+.jdzBox ul li span
+{
+    width: 4vh;
+    height: 4vh;
+    text-align: center;
+    line-height: 4vh;
+    background: #3d4244bd;
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 2vh;
+    font-size: 2vh;
+    font-weight: 600;
+    transform: translateY(-2px);
+}
+.jdzBox ul li:hover span /*เมื่อเลื่อนเมาส์ พืนหลังหมายเลขข้างหน้าจะสลับสีกัน*/
+{
+    background: #fff;
+    color: #F44336;
+}
+
+.list-title{
+    coLor: #fff;
+    background: #273ab1d1;
+    padding: 2vh 2vh;
+    font-size: 2.3vh;
+    font-weight: 700;
+    /* border-top-left-radius: 10px; */
+    /* border-top-right-radius: 10px; */
+    position: absolute;
+    top: 20vh;
+    left: 5vh;
+    width: 15vw;
+    transition: 0.5s;
+}
+.list-title:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    /* transform: translateY(-2px); */
+    background: #6973b3cc;
+}
