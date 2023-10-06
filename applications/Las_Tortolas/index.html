@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<!-- __V3D_TEMPLATE__ - template-based file; delete this line to prevent this file from being updated -->
+<html lang="en">
+<head>
+  <title>Verge3D Web Interactive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the art WebGL and HTML5 technologies.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Verge3D Web Interactive">
+  <meta name="twitter:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the art WebGL and HTML5 technologies.">
+  <meta name="twitter:image:src" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Verge3D Web Interactive">
+  <meta property="og:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the art WebGL and HTML5 technologies.">
+  <meta property="og:image" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <meta property="og:type" content="website">
+
+  <meta name="generator" content="Verge3D 4.1.1">
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="media/manifest.json">
+  <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#0048a5">
+  <meta name="theme-color" content="#ffffff">
+
+
+  
+  <script src="v3d.js"></script>
+  <script src="Las_Tortolas.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="Las_Tortolas.css">
+
+  <link rel="stylesheet" type="text/css" href="/styles/notas.css">
+  <link rel="stylesheet" type="text/css" href="/styles/preloader.css">
+  <link rel="stylesheet" type="text/css" href="/styles/info.css">
+  <link rel="stylesheet" type="text/css" href="/styles/buttons.css">
+  <link rel="stylesheet" type="text/css" href="/styles/etiquetas.css">
+  <link rel="stylesheet" type="text/css" href="/styles/quiz.css">
+  <link rel="stylesheet" type="text/css" href="/styles/menu.css">
+  <link rel="stylesheet" type="text/css" href="/styles/menu2.css">
+</head>
+
+<body>
+  <div id="v3d-container">
+    <!-- <div id="fullscreen-button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode"></div> -->
+     <!-- preloader -->
+     <div class="container-preloader-main" id="preloader_screen">
+      <div class="container-preloader">
+        <div class="imagen-preloader">
+          <img src="/imagenes/logo-quellaveco.png" style="height: inherit;"/>
+        </div>
+        <div class="wrapper">
+           <div class="loader">
+              <div class="dot"></div>
+           </div>
+           <div class="loader">
+              <div class="dot"></div>
+           </div>
+           <div class="loader">
+              <div class="dot"></div>
+           </div>
+           <div class="loader">
+              <div class="dot"></div>
+           </div>
+           <div class="loader">
+              <div class="dot"></div>
+           </div>
+           <div class="loader">
+              <div class="dot"></div>
+           </div>
+        </div>
+        <div class="text">
+           Cargando
+        </div>
+        <div id="percentage"
+        >0%</div>
+      </div>
+     </div>
+      <!-- end preloader -->
+   <!--  CONTAINER IMAGEN EDUVERSO -->
+    <div>
+      <a href="https://www.eduverso.pe/" target="_blank">
+        <img id="powered_by_eduverso_img" class="container-powered-by" style="display: none;"  src="/imagenes/logo-eduverso.png">
+      </a>  
+    </div>
+    <!--  end CONTAINER IMAGEN EDUVERSO --> 
+
+   <!--  CONTAINER titulo -->
+   <div class="container-titulo-procedimiento" style="display: none;" id="titulo_container">
+      <h1 class="sixth">Área de flotación</h1>
+   </div>  
+   <!--  end CONTAINER titulo -->
+
+   <!--  Boton para abrir Ventana de informacion -->
+   <div class="container-boton-informacion" style="display: none;" id="btn_abrir_informacion">
+      <h1 >ℹ</h1>
+   </div>  
+   <!--  end  Boton para abrir Ventana de informacion-->
+
+    <!-- Ventana de informacion -->
+    <div class="modal" id="info_screen" style="display: none;">
+      <article class="modal-container">
+        <header class="modal-container-header">
+          <h1 class="modal-container-title">
+           
+          </h1>
+        <!--   <button class="icon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+            </svg>
+          </button> -->
+        </header>
+        <section class="modal-container-body rtf">
+          <h2>Bienvenido al procedimiento interactivo de "Flotación"</h2>
+
+          <!-- <h2>Instrucciones</h2> -->
+          <p>Utilice los controles del mouse para interactuar con el escenario</p>
+          <ol>
+            <li>Para rotar y desplazarse por las vistas del laboratorio utilice el botón izquierdo del mouse</li>
+            <li style="
+                  list-style: none;
+                  text-align: -webkit-center;
+              ">
+              <img style="height: 10vh; padding: 2vh 0;"  src="/imagenes/click-izquierdo.jpg">
+            </li>
+           
+            <li>Para acercar o alejar las vistas del laboratorio utilice la rueda del mouse.</li>
+            <li style="
+                  list-style: none;
+                  text-align: -webkit-center;
+              ">
+              <img style="height: 10vh; padding: 2vh 0;" src="/imagenes/rueda.jpg">
+            </li>
+          </ol>         
+         <!--  <h2>¿Cómo iniciar?</h2>
+          <ol>
+            <li>Para iniciar el laboratorio, dirígase al Menú de Etapas ubicado en la parte lateral izquierda y empiece presionando sobre la Etapa 1 (Inspección del Actuador)</li>
+            <li>Después se habilitarán los pasos que corresponden a la Etapa 1</li>
+          </ol> -->
+          
+    
+         
+        </section>
+        <footer class="modal-container-footer">
+         <button class="button is-primary" id="btn_cerrar_informacion">Continuar</button>
+        </footer>
+      </article>
+    </div>
+    <!-- End Ventana de informacion -->
+
+     <!-- Menu -->
+    <!-- <a href="#menu" id="toggle">Remolienda</a>
+
+    <div id="menu">
+      <ul>
+        <li><a id="equipo_1">4510 SAL 012</a></li>
+        <li><a id="equipo_2">4510 DIS 002</a></li>
+        <li><a id="equipo_2">Objeto 3</a></li>
+        <li><a id="equipo_2">Objeto 4</a></li>
+        <li><a id="equipo_2">Objeto 5</a></li>
+        <li><a id="equipo_2">Objeto 6</a></li>
+        <li><a id="equipo_2">Objeto 7</a></li>
+        <li><a id="equipo_2">Objeto 8</a></li>
+        <li><a id="equipo_2">Objeto 9</a></li>
+        <li><a id="equipo_2">Objeto 10</a></li>
+        <li><a id="equipo_2">Objeto 11</a></li>
+        <li><a id="equipo_2">Objeto 12</a></li>
+        <li><a id="equipo_2">Objeto 13</a></li>
+        <li><a id="equipo_2">Objeto 14</a></li>
+        <li><a id="equipo_2">Objeto 15</a></li>
+        <li><a id="equipo_2">Objeto 16</a></li>
+      </ul>
+    </div> -->
+
+    <div class="list-title" id="submenu_1">
+      FLOTACIÓN ROUGHER
+    </div>
+    <div class="list-title" id="submenu_2" style="top:30vh;">
+      REMOLIENDA
+    </div>
+    <div class="list-title" id="submenu_3" style="top:40vh;">
+      FLOTACIÓN PRE-CLEANER / COLUMNAS CLEANER SCAVENGER
+    </div>
+
+    <div class="list-title" id="menu_principal" style="   display:none; bottom: 5vh;
+    top: auto;">
+      Menú
+    </div>
+
+    <div class="list-container" id="submenu_1_opciones" style="display: none;">    
+      <div class="jdzBox">
+            
+              <ul>
+                  <li id="equipo_1_1"><span>1</span>Muestreador Alimentación Rougher </li>
+                  <li id="equipo_1_2"><span>2</span>Celdas Rougher</li>
+                  <li id="equipo_1_3"><span>3</span>Muestreador Colas Rougher</li>
+                  <li id="equipo_1_4"><span>4</span>Muestreador Cortador Concentrado Rougher</li>
+               
+              </ul>
+          </div>
+   </div>
+   <div class="list-container" id="submenu_2_opciones" style="display: none;">    
+      <div class="jdzBox">
+            
+              <ul>
+                  <li id="equipo_2_1"><span>1</span>Bomba Alimentación Ciclones</li>
+                  <li id="equipo_2_2"><span>2</span>Hidrociclón Remolienda</li>
+                  <li id="equipo_2_3"><span>3</span>Molino Remolienda</li>
+                  <li id="equipo_2_4"><span>4</span>Bomba de Recirculación</li>
+                
+              </ul>
+          </div>
+   </div>
+   <div class="list-container" id="submenu_3_opciones" style="display: none;">    
+      <div class="jdzBox">
+            
+              <ul>
+                  <li id="equipo_3_1"><span>1</span>Bombas Producto Remolienda</li>
+                  <li id="equipo_3_2"><span>2</span>Columna Cleaner 1 y 2</li>
+                  <li id="equipo_3_3"><span>3</span>Columna Scavenger 1 y 2</li>
+                  <li id="equipo_3_4"><span>4</span>Bombas Colas Columnas Cleaner</li>
+                  <li id="equipo_3_5"><span>5</span>Muestreador Concentrado Colectivo</li>
+                  <li id="equipo_3_6"><span>6</span>Bombas Concentrado Rougher</li>
+                  <li id="equipo_3_7"><span>7</span>Celdas de Flotación Pre-Cleaner</li>
+                  <li id="equipo_3_8"><span>8</span>Muestreador Colas Pre-Cleaner</li>
+                  <li id="equipo_3_9"><span>9</span>Bombas Recirculación Sistema Microcel Celdas Columna</li>
+                  <li id="equipo_3_10"><span>10</span>Bombas de Dosificación de Espumante (DF250)</li>
+                
+              </ul>
+          </div>
+   </div>
+ <!-- end Menu -->
+    
+
+  <!-- Ventana de informacion -->
+
+  <div class="modal" id="info_equipo_1_1" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_1_1_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_1_2" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+    
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_1_2_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_1_3" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+     
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_1_3_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_1_4" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_1_4_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+
+  <!-- -------------------------------------------------------------- -->
+
+  <div class="modal" id="info_equipo_2_1" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_2_1_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_2_2" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+    
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_2_2_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_2_3" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+     
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_2_3_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_2_4" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_2_4_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+
+  <!-- -------------------------------------------------------------- -->
+
+  <div class="modal" id="info_equipo_3_1" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_1_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ 
+ <div class="modal" id="info_equipo_3_2" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_2_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+
+ <div class="modal" id="info_equipo_3_3" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_3_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_3_4" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_4_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_3_5" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_5_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_3_6" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_6_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_3_7" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_7_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_3_8" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_8_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_3_9" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_9_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_3_10" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+  
+     </header>
+     <section class="modal-container-body rtf">
+      <img src="/imagenes/equipos/3_1.png"/>
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="info_equipo_3_10_btnCerrar">Volver</button>
+     </footer>
+   </article>
+ </div>
+
+ <!--  <div class="modal" id="info_equipo_1_1" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header">
+       <h1 class="modal-container-title">
+        
+       </h1>
+     
+     </header>
+     <section class="modal-container-body rtf">
+       <h2>Nombre Equipo</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+       <ol>
+         <li>Características</li>
+         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+         <li style="
+               list-style: none;
+               text-align: -webkit-center;
+           ">
+           <img style="height: 10vh; padding: 2vh 0;"  src="/imagenes/equipo-2.jpg">
+         </li>
+        
+         <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+         <li style="
+               list-style: none;
+               text-align: -webkit-center;
+           ">
+           <img style="height: 10vh; padding: 2vh 0;" src="/imagenes/maquina-1.png">
+         </li>
+       </ol>         
+
+       
+ 
+      
+     </section>
+     <footer class="modal-container-footer">
+      <button class="button is-primary" id="btn_cerrar_info_equipo_1_1">Volver</button>
+     </footer>
+   </article>
+ </div> -->
+
+ 
+
+
+  <!-- End Ventana de informacion -->
+
+
+
+
+
+
+
+   <!-- notas de informacion -->
+   <div class="container-nota" id="nota_1" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Presione sobre el menú desplegable ubicado en la parte superior izquierda para observar la lista de equipos</p>
+         </div>
+      </div>
+   </div>
+     <!-- QUIZ nota 2 -->
+  <section class="section-1" id="nota_2" style="display: none;">
+   <div class="main-quiz">
+       <div class="text-container">
+           <h3>¿Por qué el andamio se encuentra en estado inoperativo?</h3>
+          
+       </div>
+       <form>
+           <div class="quiz-options">
+               <input type="radio" class="input-radio one-a jshdgdgwgdwfdfwdwjfdjwwdwdco" id="one-a" name="yes-1" required>
+               <label class="radio-label jsjwjdwjdwjdwco" for="one-a">
+                   <span class="alphabet">A</span> Falta una diagonal
+               </label>
+               <input type="radio" class="input-radio one-b jshdgdgwgdwfdfwdwjfdjwwdwdin" id="one-b" name="yes-1">
+               <label class="radio-label jsjwjdwjdwjdwin" for="one-b">
+                   <span class="alphabet">B</span> Está desnivelado 
+               </label>
+               <input type="radio" class="input-radio one-c jshdgdgwgdwfdfwdwjfdjwwdwdin" id="one-c" name="yes-1">
+               <label class="radio-label jsjwjdwjdwjdwin" for="one-c">
+                   <span class="alphabet">C</span> No es autoestable 
+               </label>
+             <input type="radio" class="input-radio one-c jshdgdgwgdwfdfwdwjfdjwwdwdin" id="one-d" name="yes-1">
+               <label class="radio-label jsjwjdwjdwjdwin" for="one-d">
+                   <span class="alphabet">D</span> Está bien armado
+               </label>
+           </div>
+          
+       </form>
+   </div>
+</section>
+  <!-- end QUIZ nota 2 -->
+
+
+
+   <div class="container-nota" id="nota_3" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Presione sobre la diagonal faltante posicionada en el suelo, para ser colocada en el andamio.</p>
+         </div>
+      </div>
+   </div>
+   <div class="container-nota" id="nota_4" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Presione sobre la tarjeta roja resaltada en celeste para reemplazarla por la tarjeta verde, indicando que el andamio se encuentra en estado operativo.</p>
+         </div>
+      </div>
+   </div>
+
+   <div class="container-nota" id="nota_5" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Presione sobre la línea de vida 1 resaltada en celeste para realizar su inspección</p>
+         </div>
+      </div>
+   </div>
+   <div class="container-nota" id="nota_5_1" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Verifique el estado en el cuál se encuentra la línea de vida 1.</p>
+         </div>
+      </div>
+   </div>
+   <div class="container-nota" id="nota_5_2" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Presione sobre la línea de vida 2 resaltada en celeste para realizar su inspección</p>
+         </div>
+      </div>
+   </div>
+   <div class="container-nota" id="nota_5_3" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Verifique el estado en el cuál se encuentra la línea de vida 2.</p>
+         </div>
+      </div>
+   </div>
+
+   
+<!-- QUIZ linea de vida -->
+<section class="section-1" id="nota_5_4" style="display: none;" >
+   <div class="main-quiz">
+       <div class="text-container">
+           <h3>¿Cuál es la línea de vida que se encuentra en buen estado?</h3>
+       </div>
+       <form>
+         <div class="quiz-options">
+            <div class="opcion-elemento-buen-estado" id="option_linea_1">
+               Línea de vida 1
+            </div>
+            <div class="opcion-elemento-buen-estado" id="option_linea_2">
+               Línea de vida 2
+            </div>
+           <!--  <input type="radio" class="input-radio  " id="option_linea_1" required>
+            <label class="radio-label jsjwjdwjdwjdwco" id="label_linea_1">
+                <span class="alphabet">A</span> Línea de vida 1
+            </label>
+            <input type="radio" class="input-radio  " id="option_linea_2" >
+            <label class="radio-label jsjwjdwjdwjdwin"  id="label_linea_2">
+                <span class="alphabet">B</span> Línea de vida 2
+            </label> -->
+           
+        </div>
+          
+       </form>
+   </div>
+</section>
+<div  class="etiqueta_elemento" id="etiqueta_linea_1">
+   <div class="round-button">
+      <div class="round-button-circle">
+      <span class="round-button">1</span>
+      </div>
+      </div>
+</div>
+<div  class="etiqueta_elemento" id="etiqueta_linea_2">
+   <div class="round-button">
+      <div class="round-button-circle">
+      <span class="round-button">2</span>
+      </div>
+      </div>
+</div>
+  <!-- end QUIZ linea de vida  -->
+
+<div class="container-nota" id="nota_5_5" style="display: none;">
+   <div class="column">
+      <div class="card inception">
+         <h3 class="tab-heading inception">    
+         </h3>
+         <p>La línea de vida 1 es la que se encuentra en buen estado.</p>
+      </div>
+   </div>
+</div>
+
+   <div class="container-nota" id="nota_6" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Presione sobre el arnés 1 resaltado en celeste para realizar su inspección</p>
+         </div>
+      </div>
+   </div>
+   <div class="container-nota" id="nota_6_1" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Verifique el estado en el cuál se encuentra el arnés 1.</p>
+         </div>
+      </div>
+   </div>
+   <div class="container-nota" id="nota_6_2" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Presione sobre el arnés 2 resaltado en celeste para realizar su inspección</p>
+         </div>
+      </div>
+   </div>
+   <div class="container-nota" id="nota_6_3" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Verifique el estado en el cuál se encuentra el arnés 2.</p>
+         </div>
+      </div>
+   </div>
+   <!-- QUIZ arnes-->
+<section class="section-1" id="nota_6_4" style="display: none;">
+   <div class="main-quiz">
+       <div class="text-container">
+           <h3>¿Cuál es el arnés que se encuentra en buen estado?</h3>
+       </div>
+       <form>
+         <div class="quiz-options">
+            <div class="opcion-elemento-buen-estado" id="option_arnes_1">
+               Arnés 1
+            </div>
+            <div class="opcion-elemento-buen-estado" id="option_arnes_2">
+               Arnés 2
+            </div>
+          
+        </div>
+          
+       </form>
+   </div>
+</section>
+<div  class="etiqueta_elemento" id="etiqueta_arnes_1">
+   <div class="round-button">
+      <div class="round-button-circle">
+      <span class="round-button">1</span>
+      </div>
+      </div>
+</div>
+<div  class="etiqueta_elemento" id="etiqueta_arnes_2">
+   <div class="round-button">
+      <div class="round-button-circle">
+      <span class="round-button">2</span>
+      </div>
+      </div>
+</div>
+<!-- end QUIZ arnes -->
+
+<div class="container-nota" id="nota_6_5" style="display: none;">
+   <div class="column">
+      <div class="card inception">
+         <h3 class="tab-heading inception">    
+         </h3>
+         <p>El arnés 1 es el que se encuentra en buen estado.</p>
+      </div>
+   </div>
+</div>
+
+ 
+
+   <div class="container-nota" id="nota_7" style="display: none;">
+      <div class="column">
+         <div class="card inception">
+            <h3 class="tab-heading inception">    
+            </h3>
+            <p>Con los elementos de seguridad seleccionados, se debe conectar la línea de anclaje en la roseta del andamio que esté a metro y medio de altura.</p>
+         </div>
+      </div>
+   </div>
+   <div class="container-nota" id="nota_8" style="display: none;">
+      <div class="column">
+          <div class="card inception">
+              <h3 class="tab-heading inception">           
+              </h3>
+              <p>
+                ¡Muy bien! Ahora, ya puede subir al andamio de manera segura.
+              </p>
+          </div>
+         
+      </div>
+    </div>
+   <!--end  notas de informacion -->
+   
+   <!--NOTAS-->
+<!--   <div id="etiqueta_epp_1" class="bubble" style="display: none;">Arnes</div>
+  <div id="nota-2" class="bubble-2" style="display: none;">Guantes</div>
+  <div id="nota-3" class="bubble-3" style="display: none;">Lentes</div>
+  <div id="nota-4" class="bubble-4" style="display: none;">Casco</div>
+  <div id="nota-5" class="bubble-5" style="display: none;">Linea de Vida</div> -->
+
+
+   <!-- botones de siguiente -->
+
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_1">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_2">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_3">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_4">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_5">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_5_1">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_5_2">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_5_3">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_5_4">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_5_5">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_6">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_6_1">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_6_2">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_6_3">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_6_4">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_6_5">
+      Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_7">
+         Siguiente
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+   <div class="btn-next-container">
+      <div class="btn-siguiente-content" style="display:none;" id="btn_next_8">
+         Finalizar
+         <img class="img-siguiente" src="/imagenes/flecha-siguiente.gif">
+      </div>
+   </div>
+ 
+<!-- end botones de siguiente -->
+
+
+<script>
+  var theToggle = document.getElementById('toggle');
+
+// based on Todd Motto functions
+// https://toddmotto.com/labs/reusable-js/
+
+// hasClass
+function hasClass(elem, className) {
+	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+    	elem.className += ' ' + className;
+    }
+}
+// removeClass
+function removeClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+	if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+// toggleClass
+function toggleClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+            newClass = newClass.replace( " " + className + " " , " " );
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
+}
+
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
+}
+</script>
+  </div>
+
+</body>
+
+</html>
