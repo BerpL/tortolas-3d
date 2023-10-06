@@ -13782,7 +13782,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Area 2" type="CommonTab" active="true" scrollx="-371.44683046997125" scrolly="104.4920401663702" scale="0.7051735498216141">
+  <tab name="Area 2" type="CommonTab" active="false" scrollx="-1838.861089260718" scrolly="104.4920401663702" scale="0.7051735498216141">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="V:}zPFTE]@4:o5c9b[f_">is_opened_submenu2</variable>
       <variable id="aCfX^_jwsPLQgX?U)tTM">is_eq_2_1</variable>
@@ -14232,9 +14232,6 @@
                                         <shadow type="objectList" id="!AE[HyY+z;^qdn3(a8|z">
                                           <field name="FIELDNAME">&lt;none&gt;</field>
                                         </shadow>
-                                        <block type="objectList" id="=zh=BYz?WJ$h[YZO4?c+">
-                                          <field name="FIELDNAME">4530CSC003Y004</field>
-                                        </block>
                                       </value>
                                       <next>
                                         <block type="setHTMLElemStyle" id="uG::W)qjZfU@iOfjLl?d">
@@ -14857,7 +14854,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Area 3" type="CommonTab" active="false" scrollx="92.34458867871001" scrolly="124.47855111848344" scale="0.623678453823411">
+  <tab name="Area 3" type="CommonTab" active="true" scrollx="-5545.636173181173" scrolly="124.4785511184835" scale="0.623678453823411">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="u/f4~v?H8sm5Ng{B}L4#">is_opened_submenu3</variable>
       <variable id="ZYGHSW[Rb6dICo}+D^_h">is_eq_3_1</variable>
