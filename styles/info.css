@@ -21,7 +21,7 @@
     max-width: 55vw;
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color: #e5e5e5a3;
     /* border-radius: 16px; */
     overflow: hidden;
     display: flex;
@@ -42,7 +42,7 @@
     color: #031795;
     text-align: center;
     height: 2vh;
-    background: #031795;
+    background: #0317958f;
 }
 .modal-container-title {
     display: flex;
@@ -171,7 +171,7 @@
     height: 8vh;
     /* margin: 0 auto; */
     /* text-align: center; */
-    background: #031795bd;
+    background: rgb(3 23 149 / 55%);
     position: absolute;
     right: 5vh;
     top: 5vh;
@@ -185,5 +185,5 @@
     }
     
 .img-info{
-    
+    height: 50vh;
 }

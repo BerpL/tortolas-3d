@@ -31,6 +31,7 @@
   <meta name="theme-color" content="#ffffff">
 
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   
   <script src="v3d.js"></script>
   <script src="Las_Tortolas.js"></script>
@@ -85,16 +86,16 @@
      </div>
       <!-- end preloader -->
    <!--  CONTAINER IMAGEN EDUVERSO -->
-    <div>
+    <!-- <div>
       <a href="https://www.eduverso.pe/" target="_blank">
         <img id="powered_by_eduverso_img" class="container-powered-by" style="display: none;"  src="/imagenes/logo-eduverso.png">
       </a>  
-    </div>
+    </div> -->
     <!--  end CONTAINER IMAGEN EDUVERSO --> 
 
    <!--  CONTAINER titulo -->
    <div class="container-titulo-procedimiento" style="display: none;" id="titulo_container">
-      <h1 class="sixth">Área de flotación</h1>
+      <h1 class="sixth" id="tituloEquipo">Área de flotación</h1>
    </div>  
    <!--  end CONTAINER titulo -->
 
@@ -106,7 +107,9 @@
 
     <!-- Ventana de informacion -->
     <div class="modal" id="info_screen" style="display: none;">
-      <article class="modal-container">
+      <article class="modal-container" style="
+      background-color: #ffffffcf;
+  ">
         <header class="modal-container-header">
           <h1 class="modal-container-title">
            
@@ -180,21 +183,76 @@
       </ul>
     </div> -->
 
-    <div class="list-title" id="submenu_1">
+    <div class="list-title" id="submenu_1" style="top:30vh;">
       FLOTACIÓN ROUGHER
     </div>
-    <div class="list-title" id="submenu_2" style="top:30vh;">
+    <div class="list-title" id="submenu_2" style="top:40vh;">
       REMOLIENDA
     </div>
-    <div class="list-title" id="submenu_3" style="top:40vh;">
+    <div class="list-title" id="submenu_3" style="top:50vh;">
       FLOTACIÓN PRE-CLEANER / COLUMNAS CLEANER SCAVENGER
     </div>
 
-    <div class="list-title" id="menu_principal" style="   display:none; bottom: 5vh;
-    top: auto;">
-      Menú
+    <div class="list-title" id="menu_principal" style="   
+           display: none;
+    bottom: auto;
+    top: 90vh;
+    width: 2vh;
+    height: 2vh;"
+    >
+    <i class="fa-solid fa-arrow-left"></i>
     </div>
 
+    <div class="list-title" id="menu_principal_collapse" style="   
+    display: none;
+    bottom: auto;
+    top: 18vh;
+    width: 2vh;
+    height: 2vh;"
+    >
+    <i class="fa-solid fa-bars"></i>
+ </div>
+
+    <div class="list-title" id="volver_submenu" style="   
+      display: none;
+      bottom: auto;
+      top: 18vh;
+      width: 2vh;
+      height: 2vh;"
+      >
+      <i class="fa-solid fa-bars"></i>
+   </div>
+
+
+    <div class="list-title" id="volver_submenu_1" style="   
+         display: none;
+      bottom: auto;
+      top: 20vh;
+      width: 2vh;
+      height: 2vh;"
+      >
+      <i class="fa-solid fa-bars"></i>
+   </div>
+   <div class="list-title" id="volver_submenu_2" style="   
+      display: none;
+      bottom: auto;
+      top: 20vh;
+      width: 2vh;
+      height: 2vh;"
+   >
+   <i class="fa-solid fa-bars"></i>
+   </div>
+   <div class="list-title" id="voluptate" style="   
+      display: none;
+      bottom: auto;
+      top: 20vh;
+      width: 2vh;
+      height: 2vh;"
+   >
+   <i class="fa-solid fa-bars"></i>
+   </div>
+
+   
     <div class="list-container" id="submenu_1_opciones" style="display: none;">    
       <div class="jdzBox">
             
@@ -244,70 +302,233 @@
 
   <div class="modal" id="info_equipo_1_1" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_1_1_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
    
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/1.2.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_1_1_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
  <div class="modal" id="info_equipo_1_2" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-    
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_1_2_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/1.4.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_1_2_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
  <div class="modal" id="info_equipo_1_3" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-     
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_1_3_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/1.9.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_1_3_btnCerrar">Volver</button>
-     </footer>
+    
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_1_3_2" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_1_3_2_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/1.10.png"/>
+      
+     </section>
+    
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_1_3_3" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_1_3_3_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/1.11.png"/>
+      
+     </section>
+    
    </article>
  </div>
  <div class="modal" id="info_equipo_1_4" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_1_4_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/1.7.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_1_4_btnCerrar">Volver</button>
-     </footer>
+    
+   </article>
+ </div>
+ <div class="modal" id="info_equipo_1_4_2" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_1_4_2_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/1.8.png"/>
+      
+     </section>
+    
    </article>
  </div>
 
@@ -315,70 +536,134 @@
 
   <div class="modal" id="info_equipo_2_1" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_2_1_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
    
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/2.2.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_2_1_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
  <div class="modal" id="info_equipo_2_2" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-    
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_2_2_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/2.3.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_2_2_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
  <div class="modal" id="info_equipo_2_3" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-     
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_2_3_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/2.5.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_2_3_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
  <div class="modal" id="info_equipo_2_4" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_2_4_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/2.6.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_2_4_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
 
@@ -386,177 +671,375 @@
 
   <div class="modal" id="info_equipo_3_1" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_1_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/3.2.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_1_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
- 
  <div class="modal" id="info_equipo_3_2" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_2_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/3.4.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_2_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
-
  <div class="modal" id="info_equipo_3_3" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_3_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/3.11.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_3_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
  <div class="modal" id="info_equipo_3_4" style="display: none;">
    <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_4_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
      </header>
      <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
+      <img class="img-info" src="/imagenes/equipos/3.9.png"/>
       
      </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_4_btnCerrar">Volver</button>
-     </footer>
-   </article>
- </div>
- <div class="modal" id="info_equipo_3_5" style="display: none;">
-   <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
-     </header>
-     <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
-      
-     </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_5_btnCerrar">Volver</button>
-     </footer>
-   </article>
- </div>
- <div class="modal" id="info_equipo_3_6" style="display: none;">
-   <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
-     </header>
-     <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
-      
-     </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_6_btnCerrar">Volver</button>
-     </footer>
-   </article>
- </div>
- <div class="modal" id="info_equipo_3_7" style="display: none;">
-   <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
-     </header>
-     <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
-      
-     </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_7_btnCerrar">Volver</button>
-     </footer>
-   </article>
- </div>
- <div class="modal" id="info_equipo_3_8" style="display: none;">
-   <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
-     </header>
-     <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
-      
-     </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_8_btnCerrar">Volver</button>
-     </footer>
-   </article>
- </div>
- <div class="modal" id="info_equipo_3_9" style="display: none;">
-   <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
-     </header>
-     <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
-      
-     </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_9_btnCerrar">Volver</button>
-     </footer>
-   </article>
- </div>
- <div class="modal" id="info_equipo_3_10" style="display: none;">
-   <article class="modal-container">
-     <header class="modal-container-header">
-       <h1 class="modal-container-title">
-        
-       </h1>
-  
-     </header>
-     <section class="modal-container-body rtf">
-      <img src="/imagenes/equipos/3_1.png"/>
-      
-     </section>
-     <footer class="modal-container-footer">
-      <button class="button is-primary" id="info_equipo_3_10_btnCerrar">Volver</button>
-     </footer>
+    
    </article>
  </div>
 
+ <div class="modal" id="info_equipo_3_5" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_5_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/3.6.png"/>
+      
+     </section>
+    
+   </article>
+ </div>
+
+ <div class="modal" id="info_equipo_3_6" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_6_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/3.14.png"/>
+      
+     </section>
+    
+   </article>
+ </div>
+
+ <div class="modal" id="info_equipo_3_7" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_7_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/3.15.png"/>
+      
+     </section>
+    
+   </article>
+ </div>
+
+ <div class="modal" id="info_equipo_3_8" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_8_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/3.16.png"/>
+      
+     </section>
+    
+   </article>
+ </div>
+
+ <div class="modal" id="info_equipo_3_9" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_9_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/3.5.png"/>
+      
+     </section>
+    
+   </article>
+ </div>
+
+ <div class="modal" id="info_equipo_3_9_2" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_9_2_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/3.12.png"/>
+      
+     </section>
+    
+   </article>
+ </div>
+
+
+ <div class="modal" id="info_equipo_3_10" style="display: none;">
+   <article class="modal-container">
+     <header class="modal-container-header" style=" 
+          padding: 1vh 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border-top: 1px solid #ddd; */
+    position: relative;
+    height: 5vh;">
+      <footer class="modal-container-footer" style="
+      padding: 0;
+      border: none;
+  ">
+         <button class="button is-primary" style="
+            background: #ffff;
+    color: #031795;
+    border-radius: 50vh;
+    width: 5vh;
+    height: 5vh;
+    padding: 1vh;
+    margin: 0;
+     " id="info_equipo_3_10_btnCerrar"><i class="fa-solid fa-xmark"></i></i></button>
+        </footer>
+   
+     </header>
+     <section class="modal-container-body rtf">
+      <img class="img-info" src="/imagenes/equipos/3.18.png"/>
+      
+     </section>
+    
+   </article>
+ </div>
  <!--  <div class="modal" id="info_equipo_1_1" style="display: none;">
    <article class="modal-container">
      <header class="modal-container-header">
