@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="273.4000244140623" scrolly="-149.79998779296886" scale="0.9">
+  <tab name="init" type="InitTab" active="true" scrollx="326.70923182875026" scrolly="69.75376720644635" scale="0.6311586174840179">
     <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="~S4,^3j*Xi8~eQDUXoJx" disabled="true" x="190" y="130">
       <statement name="DO_END">
         <block type="setHTMLElemStyle" id="-$7k8r,tmJ#ug8;7d+Vg">
@@ -96,6 +96,13 @@
           </next>
         </block>
       </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="Y.Vr6o=5f|-^3JkrBvsm" x="-170" y="330">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="~ja?{44HRZBWi]s/jl!?" x="190" y="470">
       <statement name="DO_PROGRESS">
@@ -7483,7 +7490,7 @@
       </next>
     </block>
   </tab>
-  <tab name="New Tab" type="CommonTab" active="false" scrollx="1829.1731464710247" scrolly="244.10919950487732" scale="0.6236784538234107">
+  <tab name="New Tab" type="CommonTab" active="false" scrollx="1829.1731464710244" scrolly="742.1773600498587" scale="0.6236784538234107">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="R+S;I#d_QC7Rqa8cpX}C">is_menu_principal_opened</variable>
       <variable id="uywoFowQcX!n3$ap9WlN">equipo-id</variable>
@@ -11951,7 +11958,7 @@
       </next>
     </block>
   </tab>
-  <tab name="Area 1" type="CommonTab" active="false" scrollx="-2331.7391606397414" scrolly="355.79318246349794" scale="0.624198565725435">
+  <tab name="Area 1" type="CommonTab" active="false" scrollx="-2069.934058930032" scrolly="29.247634978146493" scale="0.624198565725435">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="ZRq2xjsS5M0b8SsDWEN;">is_opened_submenu1</variable>
       <variable id="jWdfCKA3$qZ;XmR*_Rgs">is_eq_1_1</variable>
@@ -12323,7 +12330,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id=";2pSV.Wm;Y7l_q{eUFY=">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:155 },'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:156 },'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -12952,7 +12959,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id=":tWtdYjhKVF$sLju-ZiW">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:158 },'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:159},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -13280,7 +13287,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="~bVox-y:fub#AMy25S,v">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 157},'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 158},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -13827,7 +13834,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="zC@IFhi/XS@c@j0dZ,_/">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 156},'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 157},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -14224,7 +14231,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Area 2" type="CommonTab" active="false" scrollx="-1800.7738023683874" scrolly="280.8893545764447" scale="0.6241985657254326">
+  <tab name="Area 2" type="CommonTab" active="false" scrollx="-1567.607617485693" scrolly="51.79842745242115" scale="0.6241985657254326">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="V:}zPFTE]@4:o5c9b[f_">is_opened_submenu2</variable>
       <variable id="aCfX^_jwsPLQgX?U)tTM">is_eq_2_1</variable>
@@ -14390,7 +14397,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="$;Y0yy|.ey=3{^NX0g`C">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 159},'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 160},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -14718,7 +14725,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="B|Y+c+$7BZAlJLk+u{!I">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 160},'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 161},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -15046,7 +15053,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="WOO9^dBpA8NpPZOL#9Gu">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 161},'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 162},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -15374,7 +15381,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="O/#M-:TQlmA3]N=;3stY">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 162},'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 164},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -15659,7 +15666,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Area 3" type="CommonTab" active="true" scrollx="218.27295931809385" scrolly="424.50960421928875" scale="0.5520615406645765">
+  <tab name="Area 3" type="CommonTab" active="false" scrollx="-5781.3990822677915" scrolly="111.05413658689497" scale="0.6592338356114229">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="u/f4~v?H8sm5Ng{B}L4#">is_opened_submenu3</variable>
       <variable id="ZYGHSW[Rb6dICo}+D^_h">is_eq_3_1</variable>
@@ -15899,7 +15906,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="WFUB1%%EOHR_*qfv:!^e">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:163 },'*');</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:165 },'*');</field>
                             </shadow>
                           </value>
                           <next>
@@ -16227,7 +16234,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="~S)nB^,3R/A(}#Hf(:MV">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:164 },'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:166},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -16555,7 +16562,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="7K035)-@#Z:%;[a;+xhe">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 165 },'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 167 },'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -16883,7 +16890,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="{6EhW,vh`!M,p;GJ@O5C">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 166 },'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 168 },'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -17211,7 +17218,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="!Ca}I!auc4U.}]eCw@{P">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 167},'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 169},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -17539,7 +17546,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="]-QNaE*`VP)F:W8j5s4%">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 168 },'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 170 },'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -17867,7 +17874,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="z%oVq~oe6Vp_J8XMv?mZ">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 169},'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 171},'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -18195,7 +18202,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="WI^9k/~y7{SEIsh;i-kH">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 170 },'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2: 172 },'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -18523,7 +18530,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id=":I]Bv`]M#tRs`Pc`3bQ|">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:171 },'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:173 },'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
@@ -19201,7 +19208,7 @@
                           <value name="TEXT">
                             <shadow type="textMultiline" id="K)JfN87xRg#XG)(M:Vu8">
                               <field name="HIGHLIGHT_MODE">javascript</field>
-                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:172 },'*');&amp;#10;</field>
+                              <field name="TEXT" editor-height="2" editor-width="520">window.parent.postMessage({param1: 1, param2:174 },'*');&amp;#10;</field>
                             </shadow>
                           </value>
                           <next>
