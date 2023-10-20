@@ -20,7 +20,7 @@
 .jdzBox h2
 {
     coLor: #fff;
-    background: #03a9f4;
+    background: rgb(3 23 149);
     padding: 10px 20px;
     font-size: 20px;
     font-weight: 700;
@@ -52,7 +52,7 @@
 {
     transform: scale(1.05);
     z-index: 100;
-    background: rgb(0 147 233 / 83%);
+    background: rgb(3 23 149);
     box-shadow: 0 5px 25px rgba(0,0,0,.2);
     color: #fff;
     opacity: 1;
@@ -76,7 +76,7 @@
 .jdzBox ul li:hover span /*à¹€à¸¡à¸·à¹ˆà¸­à¹€à¸¥à¸·à¹ˆà¸­à¸™à¹€à¸¡à¸²à¸ªà¹Œ à¸žà¸·à¸™à¸«à¸¥à¸±à¸‡à¸«à¸¡à¸²à¸¢à¹€à¸¥à¸‚à¸‚à¹‰à¸²à¸‡à¸«à¸™à¹‰à¸²à¸ˆà¸°à¸ªà¸¥à¸±à¸šà¸ªà¸µà¸à¸±à¸™*/
 {
     background: #fff;
-    color: rgb(0, 147, 233);
+    color: rgb(3 23 149);
 }
 
 .list-title{
@@ -97,7 +97,7 @@
     cursor:pointer;
     transform: scale(1.1);
     /* transform: translateY(-2px); */
-    background: rgb(0, 147, 233);
+    background: rgb(3 23 149);
 }
 
 

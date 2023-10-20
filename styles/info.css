@@ -39,10 +39,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: rgb(0, 147, 233);
+    color: rgb(3 23 149);
     text-align: center;
     height: 2vh;
-    background: rgb(0, 147, 233);
+    background: rgb(3 23 149);
 }
 .modal-container-title {
     display: flex;
@@ -137,7 +137,7 @@
     background-color: #dfdad7;
 }
 .button.is-primary {
-    background-color: rgb(0, 147, 233);
+    background-color: rgb(3 23 149);
     color: #fff;
 }
 .button.is-primary:hover, .button.is-primary:focus {
@@ -170,42 +170,43 @@
 /*boton informacion */
 
 .container-boton-informacion {
-    /* width: auto; */
-    /* height: 8vh; */
-    /* margin: 0 auto; */
-    /* text-align: center; */
-    background: rgb(3 23 149 / 55%);
-    position: absolute;
-    right: 8vh;
-    top: 2vh;
-    color: #fff;
-    font-size: 2vh;
-    padding: 0vh 3vh;
-    place-items: center;
-    display: flex;
-    /* bottom: auto; */
-    /* top: 90vh; */
-    width: 2vh;
-    height: 2vh;
-    coLor: #fff;
-    background: rgb(0, 147, 233);
-    padding: 2vh 2vh;
-    font-size: 2.3vh;
-    font-weight: 700;
-    /* border-top-left-radius: 10px; */
-    /* border-top-right-radius: 10px; */
-    /* position: absolute; */
-    /* top: 20vh; */
-    /* left: 7vh; */
-    /* width: 15vw; */
-    transition: 0.5s;
+        /* width: auto; */
+        /* height: 8vh; */
+        /* margin: 0 auto; */
+        /* text-align: center; */
+        background: rgb(3 23 149 / 55%);
+        position: absolute;
+        right: 10vh;
+        top: 2vh;
+        color: #fff;
+        font-size: 2vh;
+        padding: 0vh 3vh;
+        place-items: center;
+        display: flex;
+        /* bottom: auto; */
+        /* top: 90vh; */
+        width: 0.5vh;
+        height: 0.5vh;
+        coLor: #fff;
+        background: rgb(3 23 149);
+        padding: 2.5vh;
+        font-size: 2vh;
+        font-weight: 700;
+        /* border-top-left-radius: 10px; */
+        /* border-top-right-radius: 10px; */
+        /* position: absolute; */
+        /* top: 20vh; */
+        /* left: 7vh; */
+        /* width: 15vw; */
+        transition: 0.5s;
+        justify-content: center;
     }
     .container-boton-informacion:hover{
      cursor: pointer;
      cursor: pointer;
      transform: scale(1.1);
      /* transform: translateY(-2px); */
-     background: rgb(0, 147, 233);
+     background: rgb(3 23 149);
     }
     
 .img-info{

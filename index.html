@@ -46,6 +46,9 @@
   <link rel="stylesheet" type="text/css" href="/styles/quiz.css">
   <link rel="stylesheet" type="text/css" href="/styles/menu.css">
   <link rel="stylesheet" type="text/css" href="/styles/menu2.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -101,7 +104,7 @@
 
    <!--  Boton para abrir Ventana de informacion -->
    <div class="container-boton-informacion" style="display: none;" id="btn_abrir_informacion">
-      <h1 >ℹ</h1>
+      <i class="fa-solid fa-info"></i>
    </div>  
    <!--  end  Boton para abrir Ventana de informacion-->
 
@@ -158,6 +161,71 @@
       </article>
     </div>
     <!-- End Ventana de informacion -->
+
+    
+    <!--  Boton para abrir Ventana de informacion  Movil-->
+    <div class="container-boton-informacion" style="display: none;" id="btn_abrir_informacion_mobile">
+      <i class="fa-solid fa-info"></i>
+   </div>  
+   <!--  end  Boton para abrir Ventana de informacion Movil-->
+    <!-- Ventana de informacion Movil-->
+    <div class="modal" id="info_screen_mobile" style="display: none;">
+      <article class="modal-container">
+        <header class="modal-container-header">
+          <h1 class="modal-container-title">
+           
+          </h1>
+        <!--   <button class="icon-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path fill="currentColor" d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" />
+            </svg>
+          </button> -->
+        </header>
+        <section class="modal-container-body rtf">
+          <h2>Bienvenido al procedimiento interactivo de "Trabajos en caliente"</h2>
+ 
+          <!-- <h2>Instrucciones</h2> -->
+          <p>Utilice sus dedos para interactuar con el escenario. </p>
+          <ol>
+            <li>Presione con un dedo para desplazarse en la direcciones indicadas en las flechas ← ↑ → ↓, así como también para seleccionar los botones relacionados a cada paso del procedimiento.</li>
+            <li style="
+                  list-style: none;
+                  text-align: -webkit-center;
+              ">
+              <img style="height: 10vh; padding: 2vh 0;"  src="/imagenes/paso1.png">
+            </li>
+           
+            <li>Utilice el gesto de pellizco con sus dedos para acercar o alejar la vista en el módulo interactivo.</li>
+            <li style="
+                  list-style: none;
+                  text-align: -webkit-center;
+              ">
+              <img style="height: 10vh; padding: 2vh 0;" src="/imagenes/paso2.png">
+            </li>
+            <li>Utilice dos dedos y desplácelos hacia arriba o abajo para visualizar el objeto desde la perspectiva deseada.</li>
+            <li style="
+                  list-style: none;
+                  text-align: -webkit-center;
+              ">
+              <img style="height: 10vh; padding: 2vh 0;" src="/imagenes/paso3.png">
+            </li>
+          </ol>         
+         <!--  <h2>¿Cómo iniciar?</h2>
+          <ol>
+            <li>Para iniciar el laboratorio, dirígase al Menú de Etapas ubicado en la parte lateral izquierda y empiece presionando sobre la Etapa 1 (Inspección del Actuador)</li>
+            <li>Después se habilitarán los pasos que corresponden a la Etapa 1</li>
+          </ol> -->
+          
+    
+         
+        </section>
+        <footer class="modal-container-footer">
+          <button class="button is-primary" id="btn_cerrar_informacion_mobile" >Continuar</button>
+        </footer>
+      </article>
+    </div>
+    <!-- End Ventana de informacion Movil-->
 
      <!-- Menu -->
     <!-- <a href="#menu" id="toggle">Remolienda</a>
