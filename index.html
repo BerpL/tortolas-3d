@@ -46,6 +46,8 @@
   <link rel="stylesheet" type="text/css" href="/styles/quiz.css">
   <link rel="stylesheet" type="text/css" href="/styles/menu.css">
   <link rel="stylesheet" type="text/css" href="/styles/menu2.css">
+  
+  <link rel="stylesheet" type="text/css" href="/styles/mobile.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -98,7 +100,7 @@
 
    <!--  CONTAINER titulo -->
    <div class="container-titulo-procedimiento" style="display: none;" id="titulo_container">
-      <h1 class="sixth" id="tituloEquipo">Área de flotación</h1>
+      <h1 class="sixth" id="tituloEquipo">4500 Flotación colectiva de LT2</h1>
    </div>  
    <!--  end CONTAINER titulo -->
 
@@ -125,27 +127,42 @@
           </button> -->
         </header>
         <section class="modal-container-body rtf">
-          <h2>Bienvenido al procedimiento interactivo de "Flotación"</h2>
+          <h2>Bienvenido al procedimiento interactivo de "4500 Flotación colectiva de LT2"</h2>
 
           <!-- <h2>Instrucciones</h2> -->
-          <p>Utilice los controles del mouse para interactuar con el escenario</p>
-          <ol>
-            <li>Para rotar y desplazarse por las vistas del laboratorio utilice el botón izquierdo del mouse</li>
-            <li style="
-                  list-style: none;
-                  text-align: -webkit-center;
-              ">
-              <img style="height: 10vh; padding: 2vh 0;"  src="/imagenes/click-izquierdo.jpg">
-            </li>
-           
-            <li>Para acercar o alejar las vistas del laboratorio utilice la rueda del mouse.</li>
-            <li style="
-                  list-style: none;
-                  text-align: -webkit-center;
-              ">
-              <img style="height: 10vh; padding: 2vh 0;" src="/imagenes/rueda.jpg">
-            </li>
-          </ol>         
+          <p class="p-info">Utilice los controles del mouse para interactuar con el escenario</p>
+          <div class="wrapper-info">
+      
+            <aside class="sc-content-aside">
+                
+               <ol>
+                  <li>1. Para rotar y desplazarse por las vistas del laboratorio utilice el botón izquierdo del mouse</li>
+                  <li style="
+                        list-style: none;
+                        text-align: -webkit-center;
+                    ">
+                    <img style="height: 10vh; padding: vh 0;"  src="/imagenes/click-izquierdo.jpg">
+                  </li>
+                  </ol>
+
+            </aside>
+          <article class="sc-content">
+            
+            <ol>
+               
+               <li>2. Para acercar o alejar las vistas del laboratorio utilice la rueda del mouse.</li>
+               <li style="
+                     list-style: none;
+                     text-align: -webkit-center;
+                 ">
+                 <img style="height: 10vh; padding: 2vh 0;" src="/imagenes/rueda.jpg">
+               </li>
+             </ol>        
+
+            </article>
+    
+        </div>
+                 
          <!--  <h2>¿Cómo iniciar?</h2>
           <ol>
             <li>Para iniciar el laboratorio, dirígase al Menú de Etapas ubicado en la parte lateral izquierda y empiece presionando sobre la Etapa 1 (Inspección del Actuador)</li>
@@ -183,12 +200,12 @@
           </button> -->
         </header>
         <section class="modal-container-body rtf">
-          <h2>Bienvenido al procedimiento interactivo de "Trabajos en caliente"</h2>
+         <h2>Bienvenido al procedimiento interactivo de "4500 Flotación colectiva de LT2"</h2>
  
           <!-- <h2>Instrucciones</h2> -->
           <p>Utilice sus dedos para interactuar con el escenario. </p>
           <ol>
-            <li>Presione con un dedo para desplazarse en la direcciones indicadas en las flechas ← ↑ → ↓, así como también para seleccionar los botones relacionados a cada paso del procedimiento.</li>
+            <li>Presione con un dedo para desplazarse en la direcciones indicadas en las flechas ← ↑ → ↓, así como también para seleccionar las opciones del menú situado en la parte izquierda.</li>
             <li style="
                   list-style: none;
                   text-align: -webkit-center;
@@ -252,13 +269,13 @@
     </div> -->
 
     <div class="list-title" id="submenu_1" style="top:30vh;">
-      FLOTACIÓN ROUGHER
+      Flotación Rougher
     </div>
     <div class="list-title" id="submenu_2" style="top:40vh;">
-      REMOLIENDA
+      Remolienda
     </div>
     <div class="list-title" id="submenu_3" style="top:50vh;">
-      FLOTACIÓN PRE-CLEANER / COLUMNAS CLEANER SCAVENGER
+      Flotación Pre-Cleaner / Columnas Cleaner Scavenger
     </div>
 
     <div class="list-title" id="menu_principal" style="   
@@ -1573,53 +1590,84 @@
  
 <!-- end botones de siguiente -->
 
+<div id="horizontalContainer" class="container-mb-horizontal center-mb-horizontal" style="display: none; width: 100vw; height: 100vh; margin: auto; top: 0; left: 0; background: #5d5555ba; position: absolute; z-index: 60; color: white; justify-content: center; align-items: center;">
+   <span style="font-size: 3vh; margin: 0 7vh; text-align: center; line-height: 4vh; font-weight: bold;">
+     Pon tu celular en posición horizontal para poder acceder a la experiencia
+     <br>
+     <img style="width: 13vh; filter: invert(1); margin: 3vh auto;" src="/imagenes/horizontal-icono.png" >
+   </span>
+ </div>
 
-<script>
-  var theToggle = document.getElementById('toggle');
+
+  </div>
+
+  <script>
+   if (
+  /Android/i.test(navigator.userAgent) ||
+  /webOS/i.test(navigator.userAgent) ||
+  /iPhone/i.test(navigator.userAgent) ||
+  /iPad/i.test(navigator.userAgent) ||
+  /iPod/i.test(navigator.userAgent) ||
+  /BlackBerry/i.test(navigator.userAgent) ||
+  /Windows Phone/i.test(navigator.userAgent)
+) {
+  window.matchMedia("(orientation:portrait)").addEventListener("change", function(e) {
+      var portrait = e.matches;
+      var horizontalContainer = document.getElementById("horizontalContainer");
+      if (horizontalContainer) {
+          horizontalContainer.style.display = portrait ? "flex" : "none";
+      }
+  });
+} else {
+  var horizontalContainer = document.getElementById("horizontalContainer");
+  if (horizontalContainer) {
+      horizontalContainer.style.display = "none";
+  }
+}
+
+var theToggle = document.getElementById('toggle');
 
 // based on Todd Motto functions
 // https://toddmotto.com/labs/reusable-js/
 
 // hasClass
 function hasClass(elem, className) {
-	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+ return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
 }
 // addClass
 function addClass(elem, className) {
-    if (!hasClass(elem, className)) {
-    	elem.className += ' ' + className;
-    }
+  if (!hasClass(elem, className)) {
+     elem.className += ' ' + className;
+  }
 }
 // removeClass
 function removeClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
-	if (hasClass(elem, className)) {
-        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
-            newClass = newClass.replace(' ' + className + ' ', ' ');
-        }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    }
+ var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+ if (hasClass(elem, className)) {
+      while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+          newClass = newClass.replace(' ' + className + ' ', ' ');
+      }
+      elem.className = newClass.replace(/^\s+|\s+$/g, '');
+  }
 }
 // toggleClass
 function toggleClass(elem, className) {
-	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
-    if (hasClass(elem, className)) {
-        while (newClass.indexOf(" " + className + " ") >= 0 ) {
-            newClass = newClass.replace( " " + className + " " , " " );
-        }
-        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-    } else {
-        elem.className += ' ' + className;
-    }
+ var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+  if (hasClass(elem, className)) {
+      while (newClass.indexOf(" " + className + " ") >= 0 ) {
+          newClass = newClass.replace( " " + className + " " , " " );
+      }
+      elem.className = newClass.replace(/^\s+|\s+$/g, '');
+  } else {
+      elem.className += ' ' + className;
+  }
 }
 
 theToggle.onclick = function() {
-   toggleClass(this, 'on');
-   return false;
+ toggleClass(this, 'on');
+ return false;
 }
 </script>
-  </div>
-
 </body>
 
 </html>

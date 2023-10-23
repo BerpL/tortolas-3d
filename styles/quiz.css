@@ -345,7 +345,7 @@ form:invalid #btn {
     }
 
     section {
-        background: linear-gradient(to right, #3f2b96, #1f0961);
+        /* background: linear-gradient(to right, #3f2b96, #1f0961); */
     }
 
     label {
