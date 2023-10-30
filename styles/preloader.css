@@ -110,7 +110,20 @@ width: 43vh;
 
 /* titulo header */
 
-.container-titulo-procedimiento {max-width: none;height: auto;margin: 0 auto;padding: 0vh 1.85vh;text-align: center;background: rgb(3 23 149);position: absolute;left: 7vh;top: 7vh;font-family: 'Roboto', sans-serif;color: #fff;}
+.container-titulo-procedimiento {
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
+  padding: 0vh -0.15vh;
+  text-align: center;
+  background: rgb(3 23 149);
+  position: absolute;
+  left: 7vh;
+  top: 7vh;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  align-items: center;
+}
 
 /* ----------------- */
 /* Sixth */
@@ -118,9 +131,9 @@ width: 43vh;
 h1.sixth {position: relative;font-size: 2.5vh;line-height: 5vh;}
 
 h1.sixth:before,
-h1.sixth:after {content: '[';display: inline-block;position: relative;top: 1px;height: 100%;font-size: 5vh;padding: 0 2vh;transition: all 0.75s ease;color: #ffffff;}
+h1.sixth:after {content: '';display: inline-block;position: relative;top: 1px;height: 100%;font-size: 5vh;padding: 0 2vh;transition: all 0.75s ease;color: #ffffff;}
 
-h1.sixth:after { content: ']'; }
+h1.sixth:after { content: ''; }
 
 h1.sixth:hover:before { 
 transform: translateX(-5px);

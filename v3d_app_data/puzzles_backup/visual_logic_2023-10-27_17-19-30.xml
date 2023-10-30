@@ -341,7 +341,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="CommonTab" active="false" scrollx="-660.6729465257962" scrolly="369.6009707943231" scale="0.42778470273242114">
+  <tab name="main" type="CommonTab" active="true" scrollx="-123.94577367423335" scrolly="360.1464343563348" scale="0.42778470273242114">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</variable>
       <variable id=",H:kZfvv9|~YNjXy#ofY">selected</variable>
@@ -7588,7 +7588,7 @@
       </next>
     </block>
   </tab>
-  <tab name="New Tab" type="CommonTab" active="true" scrollx="1316.5714328888716" scrolly="1079.0959230540448" scale="0.8698277012054814">
+  <tab name="New Tab" type="CommonTab" active="false" scrollx="885.1289062500001" scrolly="360.63636016845703" scale="0.3">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="R+S;I#d_QC7Rqa8cpX}C">is_menu_principal_opened</variable>
       <variable id="uywoFowQcX!n3$ap9WlN">equipo-id</variable>
@@ -7950,7 +7950,7 @@
           <field name="PARENT">FALSE</field>
           <value name="VALUE">
             <block type="text" id="gad!{WZJ(SSRI}Mxd1q;">
-              <field name="TEXT">4500 FLOTACIÓN COLECTIVA DE LT2</field>
+              <field name="TEXT">Área de Flotación</field>
             </block>
           </value>
           <value name="ID">
@@ -12056,7 +12056,7 @@
       </next>
     </block>
   </tab>
-  <tab name="Area 1" type="CommonTab" active="false" scrollx="-107.29195965520103" scrolly="422.9242062036758" scale="0.5227219891639788">
+  <tab name="Area 1" type="CommonTab" active="false" scrollx="-840.1593754751134" scrolly="150.15105133288" scale="0.9726414152389166">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="ZRq2xjsS5M0b8SsDWEN;">is_opened_submenu1</variable>
       <variable id="jWdfCKA3$qZ;XmR*_Rgs">is_eq_1_1</variable>
@@ -14329,7 +14329,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Area 2" type="CommonTab" active="false" scrollx="-480.99111006912426" scrolly="12.382100013441232" scale="0.4377425597541901">
+  <tab name="Area 2" type="CommonTab" active="false" scrollx="-1567.607617485693" scrolly="280.8893545764447" scale="0.6241985657254326">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="V:}zPFTE]@4:o5c9b[f_">is_opened_submenu2</variable>
       <variable id="aCfX^_jwsPLQgX?U)tTM">is_eq_2_1</variable>

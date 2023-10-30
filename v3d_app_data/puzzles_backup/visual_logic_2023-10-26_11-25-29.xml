@@ -1,5 +1,8 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <tab name="init" type="InitTab" active="false" scrollx="-61.263535318463596" scrolly="-208.331002894467" scale="0.5872783828223023">
+  <tab name="init" type="InitTab" active="true" scrollx="392.07437855713295" scrolly="-156.32561306453175" scale="0.5374251887792909">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="7$LWicj!~+zy).Ojns+{">selected</variable>
+    </variables>
     <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="~S4,^3j*Xi8~eQDUXoJx" disabled="true" x="190" y="130">
       <statement name="DO_END">
         <block type="setHTMLElemStyle" id="-$7k8r,tmJ#ug8;7d+Vg">
@@ -96,6 +99,13 @@
           </next>
         </block>
       </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="Y.Vr6o=5f|-^3JkrBvsm" x="-170" y="330">
+      <field name="LOAD_COMP_ASSETS">TRUE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="initPreloader" id="~ja?{44HRZBWi]s/jl!?" x="190" y="470">
       <statement name="DO_PROGRESS">
@@ -333,15 +343,81 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="Y.Vr6o=5f|-^3JkrBvsm" x="1170" y="490">
-      <field name="LOAD_COMP_ASSETS">TRUE</field>
-      <field name="FULLSCREEN">TRUE</field>
-      <field name="BKG_TRANSPARENCY">FALSE</field>
-      <field name="PRESERVE_DRAW_BUF">FALSE</field>
-      <field name="FADE_ANNOTATIONS">TRUE</field>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="PUCNadd~03S~b#dTJ1#^" inline="true" x="-550" y="670">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="true" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">TRUE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="xnJG1?YD/GQ,Fhb[VG6+">
+          <field name="FIELDNAME">&lt;none&gt;</field>
+        </shadow>
+        <block type="allObjectList" id="6|IH@7+^MMkht:uOMKR9"></block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="vBKI3Irws8-=rlZ88@em">
+          <value name="IF0">
+            <block type="logic_compare" id="u!]!;k)hQw8$_SjF#Hy/">
+              <field name="OP">NEQ</field>
+              <value name="A">
+                <block type="variables_get" id="|l:~rbK{1Y[eNv[r0!7M">
+                  <field name="VAR" id="7$LWicj!~+zy).Ojns+{">selected</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="pickedObject" id="Yoak6c.l3@_@sPsJCorT"></block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="outline" id="E~@ce2d*sWPg[m5%8K!k">
+              <field name="DO_WHAT">DISABLE</field>
+              <value name="TARGET">
+                <shadow type="objectList" id="-b0en4xH)UWd#_;8grqN">
+                  <field name="FIELDNAME">&lt;none&gt;</field>
+                </shadow>
+                <block type="allObjectList" id="qRD7_idhz~*E`lcOl;5d"></block>
+              </value>
+              <next>
+                <block type="outline" id="9B*oYP-[(d5TQb*Wv7/N">
+                  <field name="DO_WHAT">ENABLE</field>
+                  <value name="TARGET">
+                    <shadow type="objectList" id="5.H:rAY-=tccYr$iw7nK">
+                      <field name="FIELDNAME">&lt;none&gt;</field>
+                    </shadow>
+                    <block type="pickedObject" id="KZO@r,QH/r39ONImO^1M"></block>
+                  </value>
+                  <next>
+                    <block type="variables_set" id="7t=%kpA/VH;8l}}WLsB-">
+                      <field name="VAR" id="7$LWicj!~+zy).Ojns+{">selected</field>
+                      <value name="VALUE">
+                        <block type="pickedObject" id="WWiq}OYF-mX%Bip`5zbI"></block>
+                      </value>
+                      <next>
+                        <block type="console.log" id="tnMJ7x|0hQm3Z{7*~r_M">
+                          <value name="VALUE">
+                            <shadow type="text" id="@q3I=9dbCnh0TQ1}u?RD">
+                              <field name="TEXT">Hello, Verge!</field>
+                            </shadow>
+                            <block type="variables_get" id=";7^if7:@)JzWq2YClL],">
+                              <field name="VAR" id="7$LWicj!~+zy).Ojns+{">selected</field>
+                            </block>
+                          </value>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
     </block>
   </tab>
-  <tab name="main" type="CommonTab" active="false" scrollx="-660.6729465257962" scrolly="369.6009707943231" scale="0.42778470273242114">
+  <tab name="main" type="CommonTab" active="false" scrollx="-564.5029439272255" scrolly="423.06505019993267" scale="0.5582172371174902">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="7!92=27b9/2e~;W7EM3-">is_ft_loaded</variable>
       <variable id=",H:kZfvv9|~YNjXy#ofY">selected</variable>
@@ -620,79 +696,6 @@
               <field name="DOM_OBJECT">BODY</field>
             </block>
           </value>
-        </block>
-      </statement>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="d1Ff~wI:`R1P`q~JdgKl" inline="true" disabled="true" x="450" y="-630">
-      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="true" enableifmissed="false"></mutation>
-      <field name="X_RAY">FALSE</field>
-      <field name="DOUBLE_CLICK">TRUE</field>
-      <field name="LEFT_BUTTON">TRUE</field>
-      <field name="MIDDLE_BUTTON">TRUE</field>
-      <field name="RIGHT_BUTTON">TRUE</field>
-      <value name="VALUE">
-        <shadow type="objectList" id="iW3YPIwwiKHp;]FCd+^p">
-          <field name="FIELDNAME">&lt;none&gt;</field>
-        </shadow>
-        <block type="allObjectList" id="x9f^WH(UQ0R^-c6=?wQI"></block>
-      </value>
-      <statement name="DO">
-        <block type="controls_if" id="K5(8z+IyvE!Kn6z(lODq">
-          <value name="IF0">
-            <block type="logic_compare" id="HfQ]}i;/d^/K`k;:w3ls">
-              <field name="OP">NEQ</field>
-              <value name="A">
-                <block type="variables_get" id="=,:c{X4/IB{n`5.MFeGk">
-                  <field name="VAR" id=",H:kZfvv9|~YNjXy#ofY">selected</field>
-                </block>
-              </value>
-              <value name="B">
-                <block type="pickedObject" id="WtwJrc7EoaJ-=AOiEy,o"></block>
-              </value>
-            </block>
-          </value>
-          <statement name="DO0">
-            <block type="outline" id="u]?-yr}(q+^F2w}bc;+u">
-              <field name="DO_WHAT">DISABLE</field>
-              <value name="TARGET">
-                <shadow type="objectList" id="snLB$wcCfT#8xVT3z1|T">
-                  <field name="FIELDNAME">&lt;none&gt;</field>
-                </shadow>
-                <block type="allObjectList" id="~){LXdB^c@~inFN.3C-g"></block>
-              </value>
-              <next>
-                <block type="outline" id=",y)R8reEDEg/ICBtNKNS">
-                  <field name="DO_WHAT">ENABLE</field>
-                  <value name="TARGET">
-                    <shadow type="objectList" id="CEZ~?.Cs-ytUR10L24T0">
-                      <field name="FIELDNAME">&lt;none&gt;</field>
-                    </shadow>
-                    <block type="pickedObject" id="*p}RbPo[@OxP~+D5D`L1"></block>
-                  </value>
-                  <next>
-                    <block type="variables_set" id="(pxo@%ZZJAGuYacJ$],.">
-                      <field name="VAR" id=",H:kZfvv9|~YNjXy#ofY">selected</field>
-                      <value name="VALUE">
-                        <block type="pickedObject" id="7D^1vX+]mF^L3mU(UUWK"></block>
-                      </value>
-                      <next>
-                        <block type="console.log" id="#Z9i22g]bu^vVKh)yp//">
-                          <value name="VALUE">
-                            <shadow type="text" id="g[zlWNye?:]@IQ/Ld!?F">
-                              <field name="TEXT">Hello, Verge!</field>
-                            </shadow>
-                            <block type="variables_get" id="c%p/=XF(A_}YGrv!y@@s">
-                              <field name="VAR" id=",H:kZfvv9|~YNjXy#ofY">selected</field>
-                            </block>
-                          </value>
-                        </block>
-                      </next>
-                    </block>
-                  </next>
-                </block>
-              </next>
-            </block>
-          </statement>
         </block>
       </statement>
     </block>
@@ -7588,7 +7591,7 @@
       </next>
     </block>
   </tab>
-  <tab name="New Tab" type="CommonTab" active="true" scrollx="1316.5714328888716" scrolly="1079.0959230540448" scale="0.8698277012054814">
+  <tab name="New Tab" type="CommonTab" active="false" scrollx="885.1289062500001" scrolly="360.63636016845703" scale="0.3">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="R+S;I#d_QC7Rqa8cpX}C">is_menu_principal_opened</variable>
       <variable id="uywoFowQcX!n3$ap9WlN">equipo-id</variable>
@@ -7950,7 +7953,7 @@
           <field name="PARENT">FALSE</field>
           <value name="VALUE">
             <block type="text" id="gad!{WZJ(SSRI}Mxd1q;">
-              <field name="TEXT">4500 FLOTACIÓN COLECTIVA DE LT2</field>
+              <field name="TEXT">Área de Flotación</field>
             </block>
           </value>
           <value name="ID">
@@ -12056,7 +12059,7 @@
       </next>
     </block>
   </tab>
-  <tab name="Area 1" type="CommonTab" active="false" scrollx="-107.29195965520103" scrolly="422.9242062036758" scale="0.5227219891639788">
+  <tab name="Area 1" type="CommonTab" active="false" scrollx="-840.1593754751134" scrolly="150.15105133288" scale="0.9726414152389166">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="ZRq2xjsS5M0b8SsDWEN;">is_opened_submenu1</variable>
       <variable id="jWdfCKA3$qZ;XmR*_Rgs">is_eq_1_1</variable>
@@ -14329,7 +14332,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="Area 2" type="CommonTab" active="false" scrollx="-480.99111006912426" scrolly="12.382100013441232" scale="0.4377425597541901">
+  <tab name="Area 2" type="CommonTab" active="false" scrollx="-1567.607617485693" scrolly="280.8893545764447" scale="0.6241985657254326">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="V:}zPFTE]@4:o5c9b[f_">is_opened_submenu2</variable>
       <variable id="aCfX^_jwsPLQgX?U)tTM">is_eq_2_1</variable>
